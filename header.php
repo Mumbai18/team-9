@@ -50,3 +50,4 @@ include 'init.php';
                 </div>
             </nav>
         </div>
+    </div>

@@ -1,7 +1,5 @@
 <?php
 include_once 'header.php';
-
-echo $_SESSION['id'];
 ?>
         <div class="parallax-container">
             <div class="parallax"><img src="static\images\photo4.jpg"></div>
