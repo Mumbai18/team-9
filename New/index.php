@@ -44,7 +44,7 @@ include_once 'header.php';
  
         <div class="item"> 
             <!-- Set the third background image using inline CSS below. --> 
-            <img src="university4.jpeg" style="width:100%; height:450px;"> 
+            <img src="4.jpg" style="width:100%; height:450px;"> 
         </div> 
  
         <div class="item"> 
