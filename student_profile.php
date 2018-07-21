@@ -14,6 +14,7 @@ $query=mysqli_query($con,"SELECT * FROM `user` WHERE `id` = '$session_user_id'")
 <html>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <head>
     <title>Educon</title>
@@ -66,6 +67,8 @@ $query=mysqli_query($con,"SELECT * FROM `user` WHERE `id` = '$session_user_id'")
 =======
 =======
 >>>>>>> 36aa8c21474339d8fbef7d633da63148de14dd62
+=======
+>>>>>>> 36aa8c21474339d8fbef7d633da63148de14dd62
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -114,6 +117,9 @@ body {font-family: "Lato", sans-serif;}
 </head>
 <body>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 36aa8c21474339d8fbef7d633da63148de14dd62
+=======
 >>>>>>> 36aa8c21474339d8fbef7d633da63148de14dd62
 =======
 >>>>>>> 36aa8c21474339d8fbef7d633da63148de14dd62
