@@ -1,29 +1,28 @@
-<<<<<<< HEAD
-<?php
-include_once 'connect.php';
 
-$email=$_GET['email'];
-$password=$_GET['psw'];
+<!--<?php
+//include_once 'connect.php';
+
+//$email=$_GET['email'];
+//$password=$_GET['psw'];
 
 
-if(isset($email) || isset($password))
+//if(isset($email) || isset($password))
 {	
-      $login=login($email,$password);
-      if($login === false)
+      //$login=login($email,$password);
+      //if($login === false)
       {
-        echo "<script type='text/javascript'>window.location.href='student_register.php';</script>";
+        //echo "<script type='text/javascript'>window.location.href='student_register.php';</script>";
 
-      }else
+      }//else
       {
-        echo "<script type='text/javascript'> window.alert('Error: Wrong Credentials'); </script>";
-        echo "<script type='text/javascript'>window.location.href='signup.php';</script>";
+        //echo "<script type='text/javascript'> window.alert('Error: Wrong Credentials'); </script>";
+        //echo "<script type='text/javascript'>window.location.href='signup.php';</script>";
       }
-}else {
-	     echo "<script type='text/javascript'>window.location.href='student_register.php';</script>";
-}
+}//else {
+	     //echo "<script type='text/javascript'>window.location.href='student_register.php';</script>";
 
-?>
-=======
+
+?>-->
 <!DOCTYPE html>
 <html>
 
@@ -50,10 +49,7 @@ if(isset($email) || isset($password))
 <body>
     <div class="row">
         <nav>
-            <div class="nav-wrapper"><a class="brand-logo" href=" ">&nbsp;&nbsp;Educon</a>
-                <ul class="right hide-on-med-and-down">
-                    <li>Loginr&nbsp;&nbsp;</li>
-                </ul>
+            <div class="nav-wrapper"><a class="brand-logo" href="index.php">&nbsp;&nbsp;Educon</a>
             </div>
         </nav><br><br>
         <form class="col s12" method="POST" action="ulogin">
@@ -75,4 +71,4 @@ if(isset($email) || isset($password))
 </body>
 
 </html>
->>>>>>> a0e038ad8ca07257d061c2359e52450f633e4fa6
+
