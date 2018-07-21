@@ -9,10 +9,11 @@ if(isset($email) || isset($password))
 
 	$sql="INSERT into `user` (`email`,`password`,`mobile_no`) VALUES ('$email','$password','$mobile')";
 			$result=mysqli_query($con,$sql);
+			
       echo "<script type='text/javascript'>window.location.href='login.php';</script>";
       
 }else {
-	echo "<script type='text/javascript'>window.location.href='connect.php';</script>";
+	echo "<script type='text/javascript'>window.location.href='student_register.php';</script>";
 }
 
 ?>

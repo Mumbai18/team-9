@@ -1,9 +1,7 @@
 <?php
-
 include_once 'header.php';
-
 ?>
-
+    
         <form class="col s12" method="POST" action="log.php">
             <div class="row card container col s6 offset-s3"><br>
                 <div class="input-field col s12"><input class="validate" id="username" name="username" type="text" required><label for="username">Email Id</label></div>
@@ -12,9 +10,13 @@ include_once 'header.php';
             </div>
         </form>
     </div>
+    <footer class="page-footer">
+        <div class="container">
+            <p>
+                <center>Copyright &#169 Jain Social Group Educon</center>
+            </p>
+        </div>
     
 <?php
-
 include_once 'footer.php';
-
 ?>

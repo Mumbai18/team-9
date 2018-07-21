@@ -1,10 +1,10 @@
-</body>
 <footer class="page-footer">
         <div class="container">
             <p>
-                <center>Copyright &#169 Jain Social Group Educon</center>
+                <center>Made with &#10084; and lot's of &#x2615;</center>
             </p>
         </div>
-        
     </footer>
+</body>
+
 </html>

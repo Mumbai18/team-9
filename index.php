@@ -1,7 +1,5 @@
 <?php
-
 include_once 'header.php';
-
 ?>
         <div class="parallax-container">
             <div class="parallax"><img src="static\images\photo4.jpg"></div>
@@ -32,7 +30,5 @@ include_once 'header.php';
         </div>
     </div>
 <?php
-
 include_once 'footer.php';
-
 ?>
