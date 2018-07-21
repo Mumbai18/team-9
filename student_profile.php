@@ -1,6 +1,15 @@
 <?php
 include_once 'header.php';
+
+if(user_data('type')===2)
+{
+  header('Location: index.php');
+
+}
+
 ?>
+
+
 
 <p>Click on the buttons inside the tabbed menu:</p>
 

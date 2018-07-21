@@ -6,7 +6,6 @@ include_once 'header.php';
                 <div class="input-field col s12"><input class="validate" id="email" name="email" type="email" required><label for="email">Email</label></div>
                 <div class="input-field col s12"><input class="validate" id="password" name="password" type="password" required><label for="password">Password</label></div>
                 <div class="input-field col s12"><input class="validate" id="phoneno" name="phoneno" type="text" required><label for="password">Phone No</label></div>
-                <div class="form-group">
                   <label class="col-md-4 control-label" for="selectbasic">Category</label>
                   <div class="col-md-6">
                     <select id="category" name="category" class="form-control" required>
@@ -16,7 +15,6 @@ include_once 'header.php';
 
                     </select>
                   </div>
-                </div>
                 <div class="input-field col s12"><input class="btn" name="uregister" type="submit" value="Register"></div><br></div>
         </form>
     </div>
