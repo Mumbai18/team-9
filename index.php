@@ -29,7 +29,7 @@
                     <ul class="right hide-on-med-and-down">
                         <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Register<i class="material-icons right">arrow_drop_down</i></a></li> 
                         <!-- <li><a href="\notes\registeration\uregister.php">Register</a></li> -->
-                        <li><a href="login.php">Login &nbsp;&nbsp;</a></li>
+                        <li><a href="\notes\registeration\ulogin.php">Login &nbsp;&nbsp;</a></li>
                     </ul>
                 </div>
             </nav>
