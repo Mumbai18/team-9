@@ -1,39 +1,8 @@
-<!DOCTYPE html>
-<html>
+<?php
 
-<head>
-    <title>Educon</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <link href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"
-        rel = "stylesheet">
-    <script src="static/js/index.js"></script>
-    <style>
-        .parallax-container {
-            height: 500px;
-        }
-    </style>
-</head>
+include_once 'header.php';
 
-<body>
-    <div class="row">
-        <ul class="dropdown-content" id="dropdown1">
-            <li><a href="student_register.php">Student</a></li>
-            <li><a href="">Donor</a></li>
-        </ul>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper"><a class="brand-logo" href="/">&nbsp;&nbsp;Educon</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Register<i class="material-icons right">arrow_drop_down</i></a></li> 
-                        <!-- <li><a href="\notes\registeration\uregister.php">Register</a></li> -->
-                        <li><a href="\notes\registeration\ulogin.php">Login &nbsp;&nbsp;</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
+?>
         <div class="parallax-container">
             <div class="parallax"><img src="static\images\photo4.jpg"></div>
         </div>
@@ -62,6 +31,8 @@
             </div>
         </div>
     </div>
-</body>
+<?php
 
-</html>
+include_once 'footer.php';
+
+?>

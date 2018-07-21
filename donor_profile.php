@@ -1,74 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Educon</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <link href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"
-        rel = "stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
+<?php
 
-/* Style the tab */
-.tab {
-    float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 30%;
-    height:800px;
-}
+include_once 'header.php';
 
-/* Style the buttons inside the tab */
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    float: left;
-    padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: 100%;
-}
-</style>
-</head>
-<body>
-
-<div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper"><a class="brand-logo" href="">&nbsp;&nbsp;Educon</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="index.php">Logout &nbsp;&nbsp;</a></li>
-                    </ul>
-                </div>
-            </nav>
-</div>
-
+?>
 
 <div class="tab">
   <button class="tablinks" onclick="openform(event, 'personal_info')" id="defaultOpen">Personal Information</button>
@@ -497,6 +431,8 @@ function openform(evt, detail) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-     
-</body>
-</html> 
+<?php
+
+include_once 'footer.php';
+
+?>
