@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2018 at 02:12 PM
+-- Generation Time: Jul 21, 2018 at 02:44 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -91,7 +91,7 @@ CREATE TABLE `stud_academics` (
   `stud_id` int(11) NOT NULL,
   `stud_currentdegree` varchar(40) NOT NULL,
   `stud_college` varchar(40) NOT NULL,
-  `stud_currentyear` int(11) NOT NULL,
+  `stud_currentyear` varchar(20) NOT NULL,
   `stud_fees` float NOT NULL,
   `stud_otherexpenses` float NOT NULL,
   `stud_govtfund` float NOT NULL,
@@ -148,6 +148,7 @@ CREATE TABLE `stud_personal_info` (
   `stud_gender` varchar(1) NOT NULL,
   `stud_caste` varchar(30) NOT NULL,
   `stud_category` varchar(30) NOT NULL,
+  `stud_dob` date NOT NULL,
   `stud_mothername` varchar(30) NOT NULL,
   `stud_fathername` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
