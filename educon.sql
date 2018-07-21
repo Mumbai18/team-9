@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2018 at 02:44 PM
+-- Generation Time: Jul 21, 2018 at 03:52 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -119,15 +119,15 @@ CREATE TABLE `stud_document` (
   `stud_rationphoto` blob NOT NULL,
   `stud_aadharphoto` blob NOT NULL,
   `stud_electricitybill` blob NOT NULL,
-  `stud_parentaadhar` blob NOT NULL,
-  `stud_birthcerti` blob NOT NULL,
-  `stud_achievements` blob NOT NULL,
+  `stud_parentaadhar` blob,
+  `stud_birthcerti` blob,
+  `stud_achievements` blob,
   `stud_feestructure` blob NOT NULL,
   `stud_familyincome` blob NOT NULL,
-  `stud_previousmarkshet` blob NOT NULL,
-  `stud_sscmarksheet` blob NOT NULL,
-  `stud_hscmarksheet` blob NOT NULL,
-  `stud_gradmarksheet` blob NOT NULL
+  `stud_previousmarkshet` blob,
+  `stud_sscmarksheet` blob,
+  `stud_hscmarksheet` blob,
+  `stud_gradmarksheet` blob
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
