@@ -124,7 +124,7 @@ body {font-family: "Lato", sans-serif;}
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<form class="form-horizontal">
+<form class="form-horizontal" method="POST" action="personal_backend.php">
 <fieldset>
 
 <!-- Form Name -->
@@ -134,7 +134,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">First Name</label>  
   <div class="col-md-4">
-  <input id="firstname" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="firstname" name="firstname" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -142,7 +142,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Middle Name</label>  
   <div class="col-md-4">
-  <input id="middlename" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="middlename" name="middlename" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -150,7 +150,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Last Name</label>  
   <div class="col-md-4">
-  <input id="lastname" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="lastname" name="lastname" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -159,14 +159,14 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Home address</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="address" name="textarea" required></textarea>
+    <textarea class="form-control" id="address" name="address" required></textarea>
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">State</label>  
   <div class="col-md-4">
-  <input id="state" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="state" name="state" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -174,7 +174,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">City</label>  
   <div class="col-md-4">
-  <input id="city" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="city" name="city" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -182,22 +182,20 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">PinCode</label>  
   <div class="col-md-4">
-  <input id="city" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="pincode" name="pincode" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
 <!-- Multiple Radios (inline) -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="radios">Gender</label>
-  <div class="col-md-4"> 
-    <label class="radio-inline" for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="M" checked="checked">
-      Male
-    </label> 
-    <label class="radio-inline" for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="F">
-      Female
-    </label>
+  <label class="col-md-4 control-label" for="selectbasic">Gender</label>
+  <div class="col-md-4">
+    <select id="gender" name="gender" class="form-control">
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+    <option value="O">Other</option>
+
+    </select>
   </div>
 </div>
 
@@ -236,8 +234,8 @@ body {font-family: "Lato", sans-serif;}
     <label class="control-label col-md-4" for="registration-date">Date of birth:</label>
     <div class="col-md-4">
         <div class="input-group registration-date-time">
-        	<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
-		    <input class="form-control" name="registration_date" id="registration-date" type="date">
+        	<span class="input-group-addon" id="basic-addon1">
+		    <input class="form-control" name="registration_date" id="registration_date" type="date">
         </div>
     </div>    
 </div>
@@ -248,7 +246,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Mother's Name</label>  
   <div class="col-md-4">
-  <input id="mothername" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="mothername" name="mothername" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -257,7 +255,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Father's Name</label>  
   <div class="col-md-4">
-  <input id="fathername" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="fathername" name="fathername" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -267,7 +265,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton"></label>
   <div class="col-md-4">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Save</button>
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Save</button>
   </div>
 </div>
 
