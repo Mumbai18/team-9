@@ -43,9 +43,9 @@ body {font-family: "Lato", sans-serif;}
 </style>
 <div class="login">
   
-  <a href="personal_d.php" class="btn btn-info" role="button">PD</a>
-  <a href="academic_d.php" class="btn btn-info" role="button">AD</a>
-  <a href="upload_d.php" class="btn btn-info" role="button">UD</a>
+  <a href="personal_d.php" class="btn btn-info" role="button">Personal Details</a>
+  <a href="academic_d.php" class="btn btn-info" role="button">Academic Details</a>
+  <a href="upload_d.php" class="btn btn-info" role="button">Upload Documents</a>
 </div>
 
 
