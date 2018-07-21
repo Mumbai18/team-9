@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2018 at 09:41 PM
+-- Generation Time: Jul 22, 2018 at 02:20 AM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -62,6 +62,13 @@ CREATE TABLE `donor_annual` (
   `donor_criteria` varchar(50) NOT NULL,
   `donor_donation` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `donor_annual`
+--
+
+INSERT INTO `donor_annual` (`donor_id`, `donor_criteria`, `donor_donation`) VALUES
+(8, 'F', 100000);
 
 -- --------------------------------------------------------
 
@@ -189,7 +196,10 @@ INSERT INTO `user` (`id`, `email`, `password`, `mobile_no`, `type`) VALUES
 (2, 'riya@gmail.com', 'riya', 4567, 0),
 (3, 'radhika.karwa@gmail.com', '123', 123, 0),
 (4, 'riya.karia@gmail.com', '123', 123, 0),
-(5, 'abc@gmail.com', 'abc', 123, 2);
+(5, 'abc@gmail.com', 'abc', 123, 2),
+(7, 'priyankadevasthali@gmail.com', '123', 2147483647, 1),
+(8, 'priyankadevasthali@gmail.com', '12345', 1234567890, 2),
+(9, 'priyankad@gmail.com', '123', 435261790, 4);
 
 --
 -- Indexes for dumped tables
@@ -257,7 +267,7 @@ ALTER TABLE `super_admin`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
