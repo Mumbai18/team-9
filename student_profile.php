@@ -348,115 +348,95 @@ body {font-family: "Lato", sans-serif;}
 <fieldset>
 
 <!-- Form Name -->
-<legend>Documents details</legend>
-<!-- Select Basic -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic">Current Academics</label>
-  <div class="col-md-4">
-    <select id="current_acad" name="caste" class="form-control">
-	  <option value="1">Secondary School</option>
-      <option value="2">SSC</option>
-	  <option value="3">HSC</option>
-	  <option value="4">Diploma</option>
-	  <option value="5">B.E</option>
-	  <option value="6">MBBS</option>
-    </select>
-  </div>
-</div>
+<legend>Upload Documents</legend>
+
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">College Name</label>  
+  <label class="col-md-4 control-label" for="textinput">Passport Photo </label>  
   <div class="col-md-4">
-  <input id="collegename" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
-<!-- Select Basic -->
+<!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic">Current Year</label>
+  <label class="col-md-4 control-label" for="textinput">family Photo </label>  
   <div class="col-md-4">
-    <select id="current_year" name="caste" class="form-control">
-	  <option value="10th">10th</option>
-	  <option value="11th">11th</option>
-	  <option value="12th">12th</option>
-	  <option value="1st">1st year</option>
-	  <option value="2nd">2nd year</option>
-	  <option value="3rd">3rd year</option>
-	  <option value="4th">4th year</option>
-    </select>
+  <input id="fam_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+    
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Fees</label>  
+  <label class="col-md-4 control-label" for="textinput">Residence Photo </label>  
   <div class="col-md-4">
-  <input id="fees" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="re_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Other Expenses</label>  
+  <label class="col-md-4 control-label" for="textinput">RationCard Photo </label>  
   <div class="col-md-4">
-  <input id="other_exp" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="re_card" name="textinput" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Government Fund</label>  
+  <label class="col-md-4 control-label" for="textinput">Residence Photo </label>  
   <div class="col-md-4">
-  <input id="fund" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="re_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+    
+  </div>
+</div><!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">AadharCard Photo </label>  
+  <div class="col-md-4">
+  <input id="aadhar_card" name="textinput" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">SSC %</label>  
+  <label class="col-md-4 control-label" for="textinput">Electricity Bill Photo </label>  
   <div class="col-md-4">
-  <input id="SSC" name="textinput" type="text" placeholder="" class="form-control input-md" >
+  <input id="elec_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">HSC %</label>  
+  <label class="col-md-4 control-label" for="textinput">Fees Structure Photo </label>  
   <div class="col-md-4">
-  <input id="HSC" name="textinput" type="text" placeholder="" class="form-control input-md" >
+  <input id="feestruct_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Graduation %</label>  
+  <label class="col-md-4 control-label" for="textinput">Income Certificate </label>  
   <div class="col-md-4">
-  <input id="grad_marks" name="textinput" type="text" placeholder="" class="form-control input-md" >
+  <input id="certi" name="textinput" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Previous years Marks%</label>  
+  <label class="col-md-4 control-label" for="textinput"> Upload PDF of Marksheet  </label>  
   <div class="col-md-4">
-  <input id="pre_marks" name="textinput" type="text" placeholder="" class="form-control input-md" >
+  <input id="pdf" name="textinput" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Family Income</label>  
-  <div class="col-md-4">
-  <input id="family_income" name="textinput" type="text" placeholder="" class="form-control input-md" required>
-    
-  </div>
-</div>
+
 
 <!-- Button -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton"></label>
   <div class="col-md-4">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Save</button>
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary" value="Upload">Save</button>
   </div>
 </div>
 
