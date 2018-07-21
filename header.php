@@ -1,5 +1,5 @@
 <?php
-include_once 'init.php';
+include 'init.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,7 +33,7 @@ include_once 'init.php';
         
         <div class="navbar-fixed">
             <nav>
-                <div class="nav-wrapper"><a class="brand-logo" href="/">&nbsp;&nbsp;Educon</a>
+                <div class="nav-wrapper"><a class="brand-logo" href="index.php">&nbsp;&nbsp;Educon</a>
                     <ul class="right hide-on-med-and-down">
                       <?php
                        if(logged_in()===true)

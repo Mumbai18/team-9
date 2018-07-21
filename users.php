@@ -63,6 +63,22 @@ function email_exists($Email){
         	}
 
 }
+
+function user_type($idd){
+	
+	//echo $idd;
+	$query=mysqli_query($con,"SELECT * FROM `user` WHERE `id` = '$idd'");
+	$query_execute=mysqli_fetch_assoc($query);
+        	
+        	if(empty($query_execute['type']))
+        	{
+        		return false;
+        	}else{
+        		return $query_execute['type'];
+        	}
+
+}
+
 function user_id($Username){
 	global $con;
 	$query=mysqli_query($con,"SELECT * FROM `user` WHERE `email` = '$Username'");
