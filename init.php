@@ -7,7 +7,7 @@ require 'users.php';
 
 if (logged_in()===true) {
 	$session_user_id=$_SESSION['id'];
-	$user_data=user_data($session_user_id,'email','type');
+	$user_data=user_data($session_user_id,'email');
 	//$cart_data=cart_data($session_user_id,'bid','bname','bprice');
 	//echo $user_data['type'];
 }

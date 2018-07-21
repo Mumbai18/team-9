@@ -1,12 +1,5 @@
 <?php
 include_once 'header.php';
-
-if(user_data('type')===2)
-{
-  header('Location: index.php');
-
-}
-
 ?>
 
 
