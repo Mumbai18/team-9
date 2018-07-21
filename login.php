@@ -52,7 +52,7 @@
             <div class="nav-wrapper"><a class="brand-logo" href="index.php">&nbsp;&nbsp;Educon</a>
             </div>
         </nav><br><br>
-        <form class="col s12" method="POST" action="ulogin">
+        <form class="col s12" method="POST" action="login.php">
             <div class="row card container col s6 offset-s3"><br>
                 <div class="input-field col s12"><input class="validate" id="username" name="username" type="text" required><label for="username">Email Id</label></div>
                 <div class="input-field col s12"><input class="validate" id="password" name="password" type="password" required><label for="password">Password</label></div>
