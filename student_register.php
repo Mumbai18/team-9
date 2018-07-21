@@ -29,7 +29,7 @@
         <nav>
             <div class="nav-wrapper"><a class="brand-logo" href=" ">&nbsp;&nbsp;Register</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="\notes\registeration\ulogin.php">Login&nbsp;&nbsp;</a></li>
+                    <li><a href="login.php">Login&nbsp;&nbsp;</a></li>
                 </ul>
             </div>
         </nav><br><br>
