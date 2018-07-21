@@ -398,7 +398,7 @@ body {font-family: "Lato", sans-serif;}
 
 <div id="document" class="tabcontent">
   
-<form class="form-horizontal">
+<form class="form-horizontal" method="POST" action="document_backend.php">
 <fieldset>
 
 <!-- Form Name -->
@@ -408,7 +408,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Passport Photo </label>  
   <div class="col-md-4">
-  <input id="photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="photo" name="photo" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -416,15 +416,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">family Photo </label>  
   <div class="col-md-4">
-  <input id="fam_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
-    
-  </div>
-</div>
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Residence Photo </label>  
-  <div class="col-md-4">
-  <input id="re_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="fam" name="fam" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -433,7 +425,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">RationCard Photo </label>  
   <div class="col-md-4">
-  <input id="re_card" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="re_card" name="re_card" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -441,14 +433,14 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Residence Photo </label>  
   <div class="col-md-4">
-  <input id="re_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="re_photo" name="re_photo" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div><!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">AadharCard Photo </label>  
   <div class="col-md-4">
-  <input id="aadhar_card" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="aadhar" name="aadhar" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -456,7 +448,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Electricity Bill Photo </label>  
   <div class="col-md-4">
-  <input id="elec_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="elec" name="elec" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -464,7 +456,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Fees Structure Photo </label>  
   <div class="col-md-4">
-  <input id="feestruct_photo" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="feestruct" name="feestruct" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -472,7 +464,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Income Certificate </label>  
   <div class="col-md-4">
-  <input id="certi" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="certi" name="certi" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -480,7 +472,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput"> Upload PDF of Marksheet  </label>  
   <div class="col-md-4">
-  <input id="pdf" name="textinput" type="file" placeholder="" class="form-control input-md" required>
+  <input id="pdf" name="pdf" type="file" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
