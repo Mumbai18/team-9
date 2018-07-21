@@ -10,9 +10,9 @@ if(isset($email) || isset($password))
 	$login=login($email,$password);
 	if($login === false )
 	{
-      echo "<script type='text/javascript'>window.location.href='index.php';</script>";
+      echo "<script type='text/javascript'>window.location.href='login.php';</script>";
 	}else{
-		echo "<script type='text/javascript'>window.location.href='student_register.php';</script>";
+		echo "<script type='text/javascript'>window.location.href='student_profile.php';</script>";
 	}
       
 }else {
