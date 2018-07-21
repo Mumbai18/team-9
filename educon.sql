@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2018 at 01:22 PM
+-- Generation Time: Jul 21, 2018 at 02:12 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -138,6 +138,7 @@ CREATE TABLE `stud_document` (
 
 CREATE TABLE `stud_personal_info` (
   `stud_id` int(11) NOT NULL,
+  `stud_fname` varchar(30) NOT NULL,
   `stud_mname` varchar(30) NOT NULL,
   `stud_lname` varchar(30) NOT NULL,
   `stud_address` varchar(100) NOT NULL,
@@ -159,7 +160,6 @@ CREATE TABLE `stud_personal_info` (
 
 CREATE TABLE `stud_registration` (
   `stud_id` int(11) NOT NULL,
-  `stud_fname` varchar(30) NOT NULL,
   `stud_mobile` int(10) NOT NULL,
   `stud_email` varchar(40) NOT NULL,
   `stud_pwd` varchar(40) NOT NULL
