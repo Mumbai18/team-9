@@ -1,28 +1,4 @@
 
-<!--<?php
-//include_once 'connect.php';
-
-//$email=$_GET['email'];
-//$password=$_GET['psw'];
-
-
-//if(isset($email) || isset($password))
-{	
-      //$login=login($email,$password);
-      //if($login === false)
-      {
-        //echo "<script type='text/javascript'>window.location.href='student_register.php';</script>";
-
-      }//else
-      {
-        //echo "<script type='text/javascript'> window.alert('Error: Wrong Credentials'); </script>";
-        //echo "<script type='text/javascript'>window.location.href='signup.php';</script>";
-      }
-}//else {
-	     //echo "<script type='text/javascript'>window.location.href='student_register.php';</script>";
-
-
-?>-->
 <!DOCTYPE html>
 <html>
 
@@ -52,9 +28,9 @@
             <div class="nav-wrapper"><a class="brand-logo" href="index.php">&nbsp;&nbsp;Educon</a>
             </div>
         </nav><br><br>
-        <form class="col s12" method="POST" action="ulogin">
+        <form class="col s12" method="POST" action="log.php">
             <div class="row card container col s6 offset-s3"><br>
-                <div class="input-field col s12"><input class="validate" id="username" name="username" type="text" required><label for="username">Username</label></div>
+                <div class="input-field col s12"><input class="validate" id="username" name="username" type="text" required><label for="username">Email Id</label></div>
                 <div class="input-field col s12"><input class="validate" id="password" name="password" type="password" required><label for="password">Password</label></div>
                 <div class="input-field col s12"><input class="btn" type="submit" value="Login"></div>
             </div>
@@ -63,7 +39,7 @@
     <footer class="page-footer">
         <div class="container">
             <p>
-                <center>Made with &#10084; and lot's of &#x2615;</center>
+                <center>Copyright &#169 Jain Social Group Educon</center>
             </p>
         </div>
         

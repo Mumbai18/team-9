@@ -29,11 +29,11 @@
         <nav>
             <div class="nav-wrapper"><a class="brand-logo" href=" ">&nbsp;&nbsp;Register</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="\notes\registeration\ulogin.php">Login&nbsp;&nbsp;</a></li>
+                    <li><a href="login.php">Login&nbsp;&nbsp;</a></li>
                 </ul>
             </div>
         </nav><br><br>
-        <form class="col s12" method="POST" action="student_register.php" id="formwrap">
+        <form class="col s12" method="POST" action="action_page.php" id="formwrap">
             <div class="row card container col s6 offset-s3"><br>
                 <div class="input-field col s12"><input class="validate" id="email" name="email" type="email" required><label for="email">Email</label></div>
                 <div class="input-field col s12"><input class="validate" id="password" name="password" type="password" required><label for="password">Password</label></div>
