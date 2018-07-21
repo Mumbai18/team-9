@@ -278,7 +278,7 @@ body {font-family: "Lato", sans-serif;}
 
 <div id="stud_academics" class="tabcontent">
 
-<form class="form-horizontal">
+<form class="form-horizontal" method="POST" action="academics_backend.php">
 <fieldset>
 
 <!-- Form Name -->
@@ -287,7 +287,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasic">Current Academics</label>
   <div class="col-md-4">
-    <select id="current_acad" name="caste" class="form-control">
+    <select id="current_acad" name="current_acad" class="form-control">
 	  <option value="1">Secondary School</option>
       <option value="2">SSC</option>
 	  <option value="3">HSC</option>
@@ -301,7 +301,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">College Name</label>  
   <div class="col-md-4">
-  <input id="collegename" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="collegename" name="collegename" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -309,7 +309,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasic">Current Year</label>
   <div class="col-md-4">
-    <select id="current_year" name="caste" class="form-control">
+    <select id="current_year" name="current_year" class="form-control">
 	  <option value="10th">10th</option>
 	  <option value="11th">11th</option>
 	  <option value="12th">12th</option>
@@ -324,7 +324,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Fees</label>  
   <div class="col-md-4">
-  <input id="fees" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="fees" name="fees" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -333,7 +333,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Other Expenses</label>  
   <div class="col-md-4">
-  <input id="other_exp" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="other_exp" name="other_exp" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -341,7 +341,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Government Fund</label>  
   <div class="col-md-4">
-  <input id="fund" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="fund" name="fund" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -349,7 +349,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">SSC %</label>  
   <div class="col-md-4">
-  <input id="SSC" name="textinput" type="text" placeholder="" class="form-control input-md" >
+  <input id="SSC" name="SSC" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -357,7 +357,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">HSC %</label>  
   <div class="col-md-4">
-  <input id="HSC" name="textinput" type="text" placeholder="" class="form-control input-md" >
+  <input id="HSC" name="HSC" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -365,7 +365,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Graduation %</label>  
   <div class="col-md-4">
-  <input id="grad_marks" name="textinput" type="text" placeholder="" class="form-control input-md" >
+  <input id="grad_marks" name="grad_marks" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -373,7 +373,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Previous years Marks%</label>  
   <div class="col-md-4">
-  <input id="pre_marks" name="textinput" type="text" placeholder="" class="form-control input-md" >
+  <input id="pre_marks" name="pre_marks" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -381,7 +381,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Family Income</label>  
   <div class="col-md-4">
-  <input id="family_income" name="textinput" type="text" placeholder="" class="form-control input-md" required>
+  <input id="family_income" name="family_income" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
@@ -390,7 +390,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton"></label>
   <div class="col-md-4">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Save</button>
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Save</button>
   </div>
 </div>
 
