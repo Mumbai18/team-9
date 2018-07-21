@@ -54,7 +54,7 @@
         </nav><br><br>
         <form class="col s12" method="POST" action="ulogin">
             <div class="row card container col s6 offset-s3"><br>
-                <div class="input-field col s12"><input class="validate" id="username" name="username" type="text" required><label for="username">Username</label></div>
+                <div class="input-field col s12"><input class="validate" id="username" name="username" type="text" required><label for="username">Email Id</label></div>
                 <div class="input-field col s12"><input class="validate" id="password" name="password" type="password" required><label for="password">Password</label></div>
                 <div class="input-field col s12"><input class="btn" type="submit" value="Login"></div>
             </div>
@@ -63,7 +63,7 @@
     <footer class="page-footer">
         <div class="container">
             <p>
-                <center>Made with &#10084; and lot's of &#x2615;</center>
+                <center>Copyright &#169 Jain Social Group Educon</center>
             </p>
         </div>
         
