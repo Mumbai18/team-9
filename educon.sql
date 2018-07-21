@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2018 at 12:46 PM
+-- Generation Time: Jul 21, 2018 at 01:22 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -21,6 +21,65 @@ SET time_zone = "+00:00";
 --
 -- Database: `educon`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `core_committee`
+--
+
+CREATE TABLE `core_committee` (
+  `core_id` int(11) NOT NULL,
+  `core_fname` varchar(30) NOT NULL,
+  `core_lname` varchar(30) NOT NULL,
+  `core_email` varchar(40) NOT NULL,
+  `core_pwd` varchar(40) NOT NULL,
+  `core_mobile` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `donor`
+--
+
+CREATE TABLE `donor` (
+  `donor_id` int(11) NOT NULL,
+  `donor_fname` varchar(30) NOT NULL,
+  `donor_lname` varchar(30) NOT NULL,
+  `donor_email` varchar(40) NOT NULL,
+  `donor_pwd` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `donor_annual`
+--
+
+CREATE TABLE `donor_annual` (
+  `donor_id` int(11) NOT NULL,
+  `donor_criteria` varchar(50) NOT NULL,
+  `donor_donation` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `educon_committee`
+--
+
+CREATE TABLE `educon_committee` (
+  `educon_id` int(11) NOT NULL,
+  `educon_fname` varchar(30) NOT NULL,
+  `educon_lname` varchar(30) NOT NULL,
+  `educon_gender` varchar(1) NOT NULL,
+  `educon_city` varchar(30) NOT NULL,
+  `educon_state` varchar(40) NOT NULL,
+  `educon_email` varchar(40) NOT NULL,
+  `educon_pwd` varchar(40) NOT NULL,
+  `educon_mobile` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -82,7 +141,7 @@ CREATE TABLE `stud_personal_info` (
   `stud_mname` varchar(30) NOT NULL,
   `stud_lname` varchar(30) NOT NULL,
   `stud_address` varchar(100) NOT NULL,
-  `stud_city` varchar(20) NOT NULL,
+  `stud_city` varchar(30) NOT NULL,
   `stud_state` varchar(40) NOT NULL,
   `stud_pincode` int(11) NOT NULL,
   `stud_gender` varchar(1) NOT NULL,
@@ -102,13 +161,44 @@ CREATE TABLE `stud_registration` (
   `stud_id` int(11) NOT NULL,
   `stud_fname` varchar(30) NOT NULL,
   `stud_mobile` int(10) NOT NULL,
-  `stud_email` varchar(50) NOT NULL,
-  `stud_pwd` varchar(50) NOT NULL
+  `stud_email` varchar(40) NOT NULL,
+  `stud_pwd` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `super_admin`
+--
+
+CREATE TABLE `super_admin` (
+  `superadmin_id` int(11) NOT NULL,
+  `superadmin_email` varchar(40) NOT NULL,
+  `superid_pwd` varchar(40) NOT NULL,
+  `superadmin_mobile` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `core_committee`
+--
+ALTER TABLE `core_committee`
+  ADD PRIMARY KEY (`core_id`);
+
+--
+-- Indexes for table `donor`
+--
+ALTER TABLE `donor`
+  ADD PRIMARY KEY (`donor_id`);
+
+--
+-- Indexes for table `educon_committee`
+--
+ALTER TABLE `educon_committee`
+  ADD PRIMARY KEY (`educon_id`);
 
 --
 -- Indexes for table `stud_registration`
@@ -117,14 +207,44 @@ ALTER TABLE `stud_registration`
   ADD PRIMARY KEY (`stud_id`);
 
 --
+-- Indexes for table `super_admin`
+--
+ALTER TABLE `super_admin`
+  ADD PRIMARY KEY (`superadmin_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `core_committee`
+--
+ALTER TABLE `core_committee`
+  MODIFY `core_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `donor`
+--
+ALTER TABLE `donor`
+  MODIFY `donor_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `educon_committee`
+--
+ALTER TABLE `educon_committee`
+  MODIFY `educon_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `stud_registration`
 --
 ALTER TABLE `stud_registration`
   MODIFY `stud_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `super_admin`
+--
+ALTER TABLE `super_admin`
+  MODIFY `superadmin_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
