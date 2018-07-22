@@ -54,10 +54,10 @@ body {font-family: "Lato", sans-serif;}
 	border-radius: 50px;
 	box-shadow: 0 10px 48px -6px rgba(0, 0, 0, .35);
 	letter-spacing: 2px;
-	padding: 13px 29px;
+	padding-top: 10%;
 	text-shadow: none;
     height: 25%;
-    width: 
+    width: 500px;
 	text-transform: uppercase;
 }
 
@@ -80,10 +80,10 @@ body {font-family: "Lato", sans-serif;}
 <div class="login">
   <div class="col-sm-3"></div>
   <div class="col-sm-6">
-  <a href="personal_d.php"  class="btn btn-info" role="button">Personal Details</a><br>
-  <a href="academic_d.php" class="btn btn-info" role="button">Academin Details</a><br>
-  <a href="upload_d.php" class="btn btn-info" role="button">Upload Details</a><br>
-  <a href="progress.php" class="btn btn-info" role="button">Application status tracking</a>
+  <a href="personal_d.php" style=";" class="button button-gradient" role="button">Personal Details</a><br>
+  <a href="academic_d.php" class="button button-gradient" role="button">Academin Details</a><br>
+  <a href="upload_d.php" class="button button-gradient" role="button">Upload Details</a><br>
+  <a href="progress.php" class="button button-gradient" role="button">Application status tracking</a>
   </div>
   <div class="col-sm-3"></div>
 </div>
