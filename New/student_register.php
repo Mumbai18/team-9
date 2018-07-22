@@ -17,7 +17,7 @@ include_once 'header.php';
       <br><br>
         <div class="input-group">
          <span class="input-group-addon">Password</span>
-          <input type="name" class="form-control" name="fname" id="Password" placeholder="Password" required>
+          <input type="name" class="form-control" name="Password" id="Password" placeholder="Password" required>
       </div>
       <br><br>
       <div class="input-group">
