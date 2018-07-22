@@ -42,10 +42,15 @@ body {font-family: "Lato", sans-serif;}
 }
 </style>
 <div class="login">
-  
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
   <a href="personal_d.php" class="btn btn-info" role="button">Personal Details</a>
   <a href="academic_d.php" class="btn btn-info" role="button">Academic Details</a>
   <a href="upload_d.php" class="btn btn-info" role="button">Upload Documents</a>
+  <button class="btn btn-info" role="button">Track status</a>
+
+</div>
+  <div class="col-sm-3"></div>
 </div>
 
 
