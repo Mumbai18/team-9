@@ -41,12 +41,20 @@ body {font-family: "Lato", sans-serif;}
     height: 100%;
 }
 </style>
+
 <div class="login">
-  
-  <a href="personal_d.php" class="btn btn-info" role="button">PD</a>
-  <a href="academic_d.php" class="btn btn-info" role="button">AD</a>
-  <a href="upload_d.php" class="btn btn-info" role="button">UD</a>
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
+  <a href="personal_d.php" class="btn btn-info" role="button">Personal Details</a>
+  <a href="academic_d.php" class="btn btn-info" role="button">Academin Details</a>
+  <a href="upload_d.php" class="btn btn-info" role="button">Upload Details</a>
+  <a href="progress.php" class="btn btn-info" role="button">Application status tracking</a>
+  </div>
+  <div class="col-sm-3"></div>
 </div>
+
+
+
 
 
 
