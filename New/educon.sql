@@ -100,7 +100,8 @@ CREATE TABLE `stud_academics` (
   `stud_previousmarks` float NOT NULL,
   `stud_financialrating` float NOT NULL,
   `stud_educationalrating` float NOT NULL,
-  `stud_totalamtrequired` float NOT NULL
+  `stud_totalamtrequired` float NOT NULL,
+  `stud_status` varchar(30) DEFAULT 'registered',
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
