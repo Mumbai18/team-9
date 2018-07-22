@@ -23,7 +23,7 @@ $stud_fathername=$_POST['fathername'];
 
 $sql="INSERT into `stud_personal_info` (`stud_id`,`stud_fname`,`stud_mname`,`stud_lname`,`stud_address`,`stud_city`,`stud_state`,`stud_pincode`,`stud_gender`,`stud_caste`,`stud_category`,`stud_dob`,`stud_mothername`,`stud_fathername`) VALUES ('$id','$stud_fname','$stud_mname','$stud_lname','$stud_address','$stud_city','$stud_state','$stud_pincode','$stud_gender','$stud_caste','$stud_category','$stud_dob','$stud_mothername','$stud_fathername')";
 			$result=mysqli_query($con,$sql);
-    echo "<script type='text/javascript'>window.location.href='student_profile.php';</script>";
+    echo "<script type='text/javascript'>window.location.href='log.php';</script>";
      
 
 ?>

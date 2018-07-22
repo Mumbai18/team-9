@@ -1,10 +1,6 @@
-<footer class="page-footer">
-        <div class="container">
-            <p>
-                <center>Made with &#10084; and lot's of &#x2615;</center>
-            </p>
-        </div>
-    </footer>
-</body>
+<div class="footer navbar-fixed-bottom text-right">
+   <p>Made By Team-9  <span class="glyphicon glyphicon-copyright-mark"></span></p>  
+</div>
 
+</body>
 </html>

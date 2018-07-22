@@ -1,21 +1,32 @@
 <?php
 include_once 'header.php';
 ?>
-    
-        <form class="col s12" method="POST" action="log.php">
-            <div class="row card container col s6 offset-s3"><br>
-                <div class="input-field col s12"><input class="validate" id="username" name="username" type="text" required><label for="username">Email Id</label></div>
-                <div class="input-field col s12"><input class="validate" id="password" name="password" type="password" required><label for="password">Password</label></div>
-                <div class="input-field col s12"><input class="btn" type="submit" value="Login"></div>
-            </div>
-        </form>
+    <div class="login">
+  <div class="col-sm-2">
+  </div>
+  <div class="col-sm-8">
+    <ul class="list-group">
+      <li class="list-group-item text-center">
+        <h2>Login </h2><br><br>
+        
+        <form name="reg" method="post" action="log1.php">
+        <div class="input-group">
+         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="email" class="form-control" name="username" id="username" placeholder="Email">
+      </div><br><br>
+      <div class="input-group">
+         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+      </div><br><br>
+        <input type="submit" class="btn btn-primary" value="Login">
+      
+      </form>
+      </li>
+    </ul>
     </div>
-    <footer class="page-footer">
-        <div class="container">
-            <p>
-                <center>Copyright &#169 Jain Social Group Educon</center>
-            </p>
-        </div>
+    <div class="col-sm-2">
+  </div>
+    </div>
     
 <?php
 include_once 'footer.php';

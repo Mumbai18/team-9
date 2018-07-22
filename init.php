@@ -2,6 +2,7 @@
 
 require 'connect.php';
 require 'users.php';
+require 'PHPMailer/PHPMailerAutoload.php';
 session_start();
 error_reporting(0);
 
