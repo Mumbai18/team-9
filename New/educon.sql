@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.10
--- http://www.phpmyadmin.net
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Jul 21, 2018 at 06:32 PM
--- Server version: 5.5.42
--- PHP Version: 5.6.10
+-- Host: 127.0.0.1
+-- Generation Time: Jul 22, 2018 at 06:58 AM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -49,6 +51,14 @@ CREATE TABLE `donor` (
   `donor_pwd` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `donor`
+--
+
+INSERT INTO `donor` (`donor_id`, `donor_fname`, `donor_lname`, `donor_email`, `donor_pwd`) VALUES
+(1, 'Rakesh', 'Shah', 'rshah@gmail.com', '123'),
+(2, 'Priyanka', 'D', 'pri@gmail.com', '123');
+
 -- --------------------------------------------------------
 
 --
@@ -60,6 +70,13 @@ CREATE TABLE `donor_annual` (
   `donor_criteria` varchar(50) NOT NULL,
   `donor_donation` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `donor_annual`
+--
+
+INSERT INTO `donor_annual` (`donor_id`, `donor_criteria`, `donor_donation`) VALUES
+(8, 'F', 100000);
 
 -- --------------------------------------------------------
 
@@ -93,16 +110,24 @@ CREATE TABLE `stud_academics` (
   `stud_fees` float NOT NULL,
   `stud_otherexpenses` float NOT NULL,
   `stud_govtfund` float NOT NULL,
-  `stud_sscmarks` float NOT NULL,
-  `stud_hscmarks` float NOT NULL,
-  `stud_gradmarks` float NOT NULL,
+  `stud_sscmarks` float DEFAULT NULL,
+  `stud_hscmarks` float DEFAULT NULL,
+  `stud_gradmarks` float DEFAULT NULL,
   `stud_familyincome` float NOT NULL,
   `stud_previousmarks` float NOT NULL,
   `stud_financialrating` float NOT NULL,
   `stud_educationalrating` float NOT NULL,
-  `stud_totalamtrequired` float NOT NULL,
-  `stud_status` varchar(30) DEFAULT 'registered',
+  `stud_totalamtrequired` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stud_academics`
+--
+
+INSERT INTO `stud_academics` (`stud_id`, `stud_currentdegree`, `stud_college`, `stud_currentyear`, `stud_fees`, `stud_otherexpenses`, `stud_govtfund`, `stud_sscmarks`, `stud_hscmarks`, `stud_gradmarks`, `stud_familyincome`, `stud_previousmarks`, `stud_financialrating`, `stud_educationalrating`, `stud_totalamtrequired`) VALUES
+(0, 'Secondary School', 'Vivekanand School', '8th', 20000, 2000, 500, 0, 0, 0, 40000, 65, 3, 3, 21500),
+(2, 'HSC', 'RJ College', '12th', 30000, 5000, 5000, 85, NULL, NULL, 30000, 70, 3, 4, 30000),
+(3, 'Diploma', 'IGM', '2nd', 70000, 5000, 25000, 70, 55, NULL, 55000, 61, 3, 3, 50000);
 
 -- --------------------------------------------------------
 
@@ -118,15 +143,15 @@ CREATE TABLE `stud_document` (
   `stud_rationphoto` blob NOT NULL,
   `stud_aadharphoto` blob NOT NULL,
   `stud_electricitybill` blob NOT NULL,
-  `stud_parentaadhar` blob NOT NULL,
-  `stud_birthcerti` blob NOT NULL,
-  `stud_achievements` blob NOT NULL,
+  `stud_parentaadhar` blob,
+  `stud_birthcerti` blob,
+  `stud_achievements` blob,
   `stud_feestructure` blob NOT NULL,
   `stud_familyincome` blob NOT NULL,
   `stud_previousmarkshet` blob NOT NULL,
-  `stud_sscmarksheet` blob NOT NULL,
-  `stud_hscmarksheet` blob NOT NULL,
-  `stud_gradmarksheet` blob NOT NULL
+  `stud_sscmarksheet` blob,
+  `stud_hscmarksheet` blob,
+  `stud_gradmarksheet` blob
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -149,8 +174,18 @@ CREATE TABLE `stud_personal_info` (
   `stud_category` varchar(30) NOT NULL,
   `stud_dob` date NOT NULL,
   `stud_mothername` varchar(30) NOT NULL,
-  `stud_fathername` varchar(30) NOT NULL
+  `stud_fathername` varchar(30) NOT NULL,
+  `stud_status` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stud_personal_info`
+--
+
+INSERT INTO `stud_personal_info` (`stud_id`, `stud_fname`, `stud_mname`, `stud_lname`, `stud_address`, `stud_city`, `stud_state`, `stud_pincode`, `stud_gender`, `stud_caste`, `stud_category`, `stud_dob`, `stud_mothername`, `stud_fathername`, `stud_status`) VALUES
+(1, 'Abhijeet', 'A', 'Salunkhe', 'Golibar road', 'Ghatkopar', 'Maharashtra', 321087, 'M', 'Open', 'Normal', '2016-02-02', 'M', 'F', 0),
+(0, 'Mamta', 'M', 'Sharma', 'M M Road', 'Kurla', 'Maharashtra', 231564, 'F', 'NT', 'Handicapped', '2017-06-14', 'Sheela', 'Ramesh', 0),
+(0, 'Suresh', 'J', 'Kale', 'Zaveri', 'Mumbai', 'Maharashtra', 234567, 'M', 'OBC', 'Orphan', '2018-07-17', 'K', 'G', 0);
 
 -- --------------------------------------------------------
 
@@ -177,7 +212,7 @@ CREATE TABLE `user` (
   `password` varchar(100) NOT NULL,
   `mobile_no` int(10) NOT NULL,
   `type` int(10) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
@@ -188,7 +223,11 @@ INSERT INTO `user` (`id`, `email`, `password`, `mobile_no`, `type`) VALUES
 (2, 'riya@gmail.com', 'riya', 4567, 0),
 (3, 'radhika.karwa@gmail.com', '123', 123, 0),
 (4, 'riya.karia@gmail.com', '123', 123, 0),
-(5, 'abc@gmail.com', 'abc', 123, 2);
+(5, 'abc@gmail.com', 'abc', 123, 2),
+(7, 'priyankadevasthali@gmail.com', '123', 2147483647, 1),
+(8, 'priyankadevasthali@gmail.com', '12345', 1234567890, 2),
+(9, 'priyankad@gmail.com', '123', 435261790, 4),
+(10, 'yadniki@gmail.com', 'yadniki', 2147483647, 2);
 
 --
 -- Indexes for dumped tables
@@ -233,26 +272,32 @@ ALTER TABLE `user`
 --
 ALTER TABLE `core_committee`
   MODIFY `core_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `donor`
 --
 ALTER TABLE `donor`
-  MODIFY `donor_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `donor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT for table `educon_committee`
 --
 ALTER TABLE `educon_committee`
   MODIFY `educon_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `super_admin`
 --
 ALTER TABLE `super_admin`
   MODIFY `superadmin_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
