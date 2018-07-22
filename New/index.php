@@ -1,110 +1,57 @@
 <?php
 include_once 'header.php';
 ?>
-<script type="text/javascript"> 
-  $(document).ready(function() { 
-    $('#myCarousel').carousel({ 
-      interval: 5000 
-    }) 
-  }); 
-</script> 
-<!-- Full Page Image Background Carousel Header --> 
-<header id="myCarousel" class="carousel slide"> 
-    <!-- Indicators --> 
-    <ol class="carousel-indicators"> 
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
-        <li data-target="#myCarousel" data-slide-to="1"></li> 
-        <li data-target="#myCarousel" data-slide-to="2"></li> 
-        <li data-target="#myCarousel" data-slide-to="3"></li> 
-        <li data-target="#myCarousel" data-slide-to="4"></li> 
-        <li data-target="#myCarousel" data-slide-to="5"></li> 
-        <li data-target="#myCarousel" data-slide-to="6"></li> 
-        <li data-target="#myCarousel" data-slide-to="7"></li> 
-        <li data-target="#myCarousel" data-slide-to="8"></li> 
-        <li data-target="#myCarousel" data-slide-to="11"></li> 
-        <li data-target="#myCarousel" data-slide-to="10"></li> 
-         
-    </ol> 
- 
-    <!-- Wrapper for Slides --> 
-    <div class="carousel-inner"> 
-        <div class="item active"> 
-            <!-- Set the first background image using inline CSS below. --> 
-            <img src="2.jpg" style="width:100%; height:450px;"> 
-             
-        </div> 
-        <div class="item"> 
-            <!-- Set the second background image using inline CSS below. --> 
-            <img src="1.jpg" style="width:100%; height:450px;"> 
-        </div> 
-        <div class="item"> 
-            <!-- Set the third background image using inline CSS below. --> 
-            <img src="3.png" style="width:100%; height:450px;"> 
-        </div> 
- 
-        <div class="item"> 
-            <!-- Set the third background image using inline CSS below. --> 
-            <img src="4.jpg" style="width:100%; height:450px;"> 
-        </div> 
- 
-        <div class="item"> 
-            <!-- Set the third background image using inline CSS below. --> 
-            <img src="university5.jpeg" style="width:100%; height:450px;"> 
-        </div> 
- 
-        <div class="item"> 
-                <!-- Set the third background image using inline CSS below. --> 
-                <img src="university6.jpeg" style="width:100%; height:450px;"> 
-        </div> 
- 
-        <div class="item"> 
-                <!-- Set the third background image using inline CSS below. --> 
-                <img src="university7.jpeg" style="width:100%; height:450px;"> 
-        </div> 
- 
-        <div class="item"> 
-                <!-- Set the third background image using inline CSS below. --> 
-                <img src="university8.jpeg" style="width:100%; height:450px;"> 
-        </div> 
- 
-        <div class="item"> 
-                <!-- Set the third background image using inline CSS below. --> 
-                <img src="university9.jpeg" style="width:100%; height:450px;"> 
-        </div> 
- 
-        <div class="item"> 
-                <!-- Set the third background image using inline CSS below. --> 
-                <img src="university10.jpeg" style="width:100%; height:450px;"> 
-        </div> 
- 
-        <div class="item"> 
-                <!-- Set the third background image using inline CSS below. --> 
-                <img src="university11.jpeg" style="width:100%; height:450px;"> 
-        </div> 
- 
- 
-    </div> 
- 
-    <!-- Controls --> 
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
-        <span class="icon-prev"></span> 
-    </a> 
-    <a class="right carousel-control" href="#myCarousel" data-slide="next"> 
-        <span class="icon-next"></span> 
-    </a> 
- 
-</header><style> 
-    button{ 
-        padding:0px; 
-        margin:0px; 
-        background:none; 
-        border:none; 
-    } 
-    button:focus {outline:0;} 
-</style> 
-<div class="login">
-   <h1>INDEX</h1>
-</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"
+        rel = "stylesheet">
+    
+<script >
+    $(document).ready(function () {
+    $(".dropdown-trigger").dropdown();
+    $('.parallax').parallax();
+    console.log('Script called');
+});
+</script>
+
+<style>
+        .parallax-container {
+            height: 500px;
+        }
+        
+</style>
+
+<div class="parallax-container">
+            <div class="parallax"><img src="vision.jpg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h6 class="header">JSG Educon Vision</h5>
+                <p style="font-size:28px;" class="grey-text text-darken-3 lighten-3"><i>-Sab Padho,Sab Badho</i></p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="events.jpg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h3 class="header">Achievement of our students</h3>
+                <p class="grey-text text-darken-3 lighten-3">Be there before anyone of you miss an an opportunity. Start the journey towards a bright future today.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="about.jpg"></div>
+        </div>
+        <div class="section white" style="padding-bottom:10%;">
+            <div class="row container">
+                <h3 class="header">About Us </h3>
+                <p class="grey-text text-darken-3 lighten-3">Educon is working since 2012 to support needy and deserving students from all segments of society in Realizing their Dream of Education.</p>
+            </div>
+        </div>
+    </div>
+
 <?php
 include_once 'footer.php';
 ?>
