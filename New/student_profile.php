@@ -58,6 +58,7 @@ body {font-family: "Lato", sans-serif;}
 	text-shadow: none;
     height: 25%;
     width: 25%;
+    width: 
 	text-transform: uppercase;
 }
 
