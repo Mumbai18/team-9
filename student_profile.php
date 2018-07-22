@@ -150,7 +150,6 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Last Name</label>  
   <div class="col-md-4">
-  <input id="lastname" name="lastname" type="text" placeholder="" class="form-control input-md" required>
     
   </div>
 </div>
